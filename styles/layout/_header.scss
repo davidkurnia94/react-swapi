@@ -23,8 +23,19 @@ header {}
 			@include flexbox;
 
 			> li {
-				@include margin-stack(left 30px);
-				@include font($fs-base, $fw-regular, $lh-base);
+				@include transition(all 250ms $transition-bouncy);
+				@include font($fs-smallest, $fw-semibold, $lh-base);
+				color: shade($clr-primary-light, 20%);
+				text-transform: uppercase;
+				letter-spacing: 2px;
+
+				> a {	
+					@include padding(15px);
+				}
+
+				&:hover {
+					color: $clr-primary-light;
+				}
 			}
 		}
 	}
