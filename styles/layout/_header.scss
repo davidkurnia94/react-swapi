@@ -1,0 +1,31 @@
+header {}
+
+.main-header {
+	@include fixed(top 0 left 0 right 0);
+	@include size(height 70px);
+
+	.main-header_container {
+		@include flexbox;
+		@include justify-content(space-between);
+		@include align-items(center);
+		@include size(height 100%);
+		@include margin(0 30px);
+	}
+
+	.main-logo {
+		> h1 {
+
+		}
+	}
+
+	.main-navigation {
+		ul {
+			@include flexbox;
+
+			> li {
+				@include margin-stack(left 30px);
+				@include font($fs-base, $fw-regular, $lh-base);
+			}
+		}
+	}
+}

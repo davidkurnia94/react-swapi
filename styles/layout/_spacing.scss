@@ -1,0 +1,7 @@
+.mb-15 {
+	@include margin-stack(bottom 15px);
+}
+
+.mb-30 {
+	@include margin-stack(bottom 30px);
+}

@@ -1,0 +1,19 @@
+.main-container {
+	margin: 0 auto;
+
+	@include phone {
+		@include size(width $phone-max-width);
+	}
+
+	@include tablet {
+		@include size(width $tablet-max-width);
+	}
+
+	@include desktop {
+		@include size(width $desktop-max-width);
+	}
+
+	@include large-desktop {
+		@include size(width $large-desktop-max-width);
+	}
+}

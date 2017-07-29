@@ -1,0 +1,28 @@
+input {
+	border: 0;
+	background: transparent;
+	outline: none;
+}
+
+.search-box {
+	@include relative;
+	@include flexbox;
+	@include flex-direction(row);
+	@include justify-content(space-between);
+	@include border-radius($border-radius);
+	background-color: $clr-primary-light;
+	overflow: hidden;
+
+	> input[type="text"] {
+		@include flex(1 1 100%);
+		@include font($fs-base, $fw-regular, $lh-base);
+		@include padding(15px);
+	}
+
+	> button[role="submit"] {
+		@include font($fs-base, $fw-regular, $lh-base);
+		@include padding(0 30px);
+		background-color: $clr-primary;
+		color: $clr-primary-light;
+	}
+}

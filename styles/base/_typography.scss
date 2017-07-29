@@ -1,0 +1,17 @@
+h1 { @include font($fs-h1, $fw-semibold, $lh-base) }
+h2 { @include font($fs-h2, $fw-semibold, $lh-base) }
+h3 { @include font($fs-h3, $fw-medium, $lh-base) }
+h4 { @include font($fs-h4, $fw-medium, $lh-base) }
+h5 { @include font($fs-h5, $fw-medium, $lh-base) }
+h6 { @include font($fs-h6, $fw-medium, $lh-base) }
+
+//------------------------------------------------
+//	#	Links
+//------------------------------------------------
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
